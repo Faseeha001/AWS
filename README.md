@@ -1,7 +1,9 @@
 **Overview**
+
 This README provides instructions on how to create a static website hosted on Amazon S3 (Simple Storage Service). Hosting a static website on S3 is a cost-effective and scalable solution, ideal for blogs, portfolios, documentation sites, and more.
 
 **Prerequisites**
+
 Before you begin, you'll need:
 
 An AWS account: If you don't have one, you can sign up for free at AWS Free Tie
