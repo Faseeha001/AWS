@@ -8,9 +8,9 @@ Before you begin, you'll need:
 
 An AWS account: If you don't have one, you can sign up for free at AWS Free Tie
 
-Steps to Create S3 Bucket for Static Website Hosting
+**Steps to Create S3 Bucket for Static Website Hosting**
 
-Step 1 : Creating a S3 Bucket
+**Step 1** : Creating a S3 Bucket
 To create a bucket
 1. Sign in to the AWS Management Console and open the Amazon S3 console at
 2. Choose Create bucket.
@@ -24,7 +24,7 @@ log_ing
 
 <img width="855" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/77fb7e1c-11b6-404a-989c-8f361ce06ee5">
 
-Step 2: Enable static website hosting
+**Step 2**: Enable static website hosting
 To enable static website hosting
 1. In the Buckets list, choose the name of the bucket that you want to enable static website hosting for.
 choose bucket
@@ -62,7 +62,7 @@ note endpoints
 <img width="485" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/7ff5f29a-be74-454c-be72-e2477779fb42">
 
 
-Step 3: Edit Block Public Access settings
+**Step 3**: Edit Block Public Access settings
 By default, Amazon S3 blocks public access to your account and buckets. If you want to use a bucket to host a static website, you can use these steps to edit your block public access settings.
 
 1. Choose the name of the bucket that you have configured as a static website.
@@ -77,7 +77,7 @@ permisson diselectt and save changes
 <img width="763" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/f39dcff9-3698-44c0-a020-d5125ac669ad">
 
 
-Step 4: Add a bucket policy that makes your bucket content publicly available
+**Step 4**: Add a bucket policy that makes your bucket content publicly available
 1. Under Buckets, choose the name of your bucket.
 2. Choose Permissions.
 3. Under Bucket Policy, choose Edit.
@@ -103,7 +103,7 @@ bucket policy
 5. Choose Save changes.
 A message appears indicating that the bucket policy has been successfully added. If you see an error that says Policy has invalid resource, confirm that the bucket name in the bucket policy matches your bucket name. If you get an error message and cannot save the bucket policy, check your account and bucket Block Public Access settings to confirm that you allow public access to the bucket.
 
-Step 5: Configure an index document
+**Step 5**: Configure an index document
 When you enable static website hosting for your bucket, you enter the name of the index document (for example, index.html). After you enable static website hosting for the bucket, you upload an HTML file with this index document name to your bucket.
 
 1. Create an index.html file.
@@ -122,7 +122,7 @@ Step 6: Test your website endpoint
 At the bottom of the page, under Static website hosting, choose your Bucket website endpoint.
 <img width="706" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/d8efd5f8-8f95-4a1c-99f8-ccd0839d64c8">
 
-Output 1 : with out Route 53 
+**Output 1****** : with out Route 53 
 <img width="758" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/2b56924a-bf2c-4a1b-8703-de8e4ba54635">
 
 
