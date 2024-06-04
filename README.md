@@ -157,4 +157,10 @@ Follow below steps to use route 53
       ## Output after using Route 53
       <img width="814" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/e032f7c8-20be-45ae-af63-c0b525b80737">
 
-      
+##  Textual representation
+
+               <img width="261" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/2c9b28a4-b1b4-48d7-8d50-f49522d03bf0">
+
+Route 53 now resolves requests for the domain "mytestdevops.com".
+S3 Bucket Hosting serves the content for "mytestdevops.com".
+The flow remains the same, with the user's browser making requests to Route 53, which then resolves the domain to the S3 bucket hosting the static website files. Finally, the static content is rendered in the user's web browser.
