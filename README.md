@@ -1,14 +1,16 @@
-**Overview**
+## Overview
 
-This README provides instructions on how to create a static website hosted on Amazon S3 (Simple Storage Service). Hosting a static website on S3 is a cost-effective and scalable solution, ideal for blogs, portfolios, documentation sites, and more.
+Hosting a static website on S3 is a cost-effective and scalable solution, ideal for blogs, portfolios, documentation sites, and more.
 
-**Prerequisites**
+## Introduction
+This README provides instructions on how to create a static website hosted on Amazon S3 (Simple Storage Service) by the process of adding an S3 bucket using Route 53 for domain routing. Route 53 is Amazon Web Services' highly available and scalable Domain Name System (DNS) web service.
 
-Before you begin, you'll need:
+## Prerequisites
+Before you begin, ensure you have the following:
+- An AWS account with permissions to create Route 53 hosted zones and manage S3 buckets.
+- A registered domain name that you want to associate with your S3 bucket.
 
-An AWS account: If you don't have one, you can sign up for free at AWS Free Tie
-
-**Steps to Create S3 Bucket for Static Website Hosting**
+## Steps to Create S3 Bucket for Static Website Hosting
 
 **Step 1** : Creating a S3 Bucket
 To create a bucket
@@ -122,7 +124,37 @@ Step 6: Test your website endpoint
 At the bottom of the page, under Static website hosting, choose your Bucket website endpoint.
 <img width="706" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/d8efd5f8-8f95-4a1c-99f8-ccd0839d64c8">
 
-**Output 1****** : with out Route 53 
+ ## output 1****** : **with out Route 53 **
 <img width="758" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/2b56924a-bf2c-4a1b-8703-de8e4ba54635">
 
+Follow below steps to use route 53 
+6 **Create a Route 53 Hosted Zone:**
+    - Navigate to the Route 53 service in the AWS Management Console.
+    - Click on "Create hosted zone."
+    - Enter your domain name and click "Create."
+    <img width="751" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/14691885-0042-47bb-8300-9d852f626a45">
 
+
+7. **Add a Record Set:**
+    - Inside your hosted zone, click on "Create record set."
+    - Enter your subdomain (if applicable) and select "Alias" as the type.
+    - Choose your S3 bucket from the dropdown list.
+    - Save the changes.
+    - <img width="661" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/c704b086-d303-4139-8d81-ca3916e8a049">
+
+
+8. **Configure DNS Records:**
+    - Depending on your requirements, you may want to configure additional DNS records such as MX records for email services, TXT records for SPF/DKIM verification, etc. Follow the prompts in Route 53 to add these records.
+    - <img width="671" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/5810c1b9-730b-4582-a05d-53d8ba6c9aa1">
+
+
+9. **Wait for DNS Propagation:**
+    - It may take some time for the changes to propagate through the DNS system. DNS propagation typically takes a few minutes to several hours.
+
+10. **Test Your Website:**
+    - Once DNS propagation is complete, you should be able to access your website using the domain name you configured.
+    - 
+      ## Output after using Route 53
+      <img width="814" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/e032f7c8-20be-45ae-af63-c0b525b80737">
+
+      
