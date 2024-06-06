@@ -71,4 +71,16 @@ In the "Certificates" tab, select the issued certificate and attach it to the lo
 <img width="522" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/762ff44e-0586-4e6c-ab11-2ba429a80b98">
 <img width="477" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/4f2ff336-1f13-42eb-b5f7-299bbf9b7527">
 
+## Point Your Domain to the Load Balancer
+
+**Step 1: Get the DNS Name of the Load Balancer**
+1.In the Lightsail console, navigate to your load balancer's management page.
+2.Copy the DNS name of the load balancer.
+
+**Step 2: Update Your Domain's DNS Settings Using Amazon Lightsail's Domains and DNS Service**
+
+1.Navigate to the Networking tab in the Lightsail console.
+2.Click on "Create DNS zone".
+Enter your domain name and click "Create DNS zone".
+<img width="764" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/33b2168e-35cc-4966-a827-bf3c6bae1ffe">
 
