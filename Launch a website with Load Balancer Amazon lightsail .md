@@ -6,7 +6,7 @@ Setting up two web servers, connecting them to a load balancer on Amazon Lightsa
 Step 1: Create Two Lightsail Instances
 
 1.Log in to your AWS Management Console.
-
+sss
 2.Navigate to Lightsail.
 
 3.Create an instance:
