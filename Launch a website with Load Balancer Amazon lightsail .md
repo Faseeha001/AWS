@@ -84,3 +84,34 @@ In the "Certificates" tab, select the issued certificate and attach it to the lo
 Enter your domain name and click "Create DNS zone".
 <img width="764" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/33b2168e-35cc-4966-a827-bf3c6bae1ffe">
 
+## Add an A record to point your domain to the Lightsail load balancer:
+
+1.In the "DNS zone" management page, click on "Add record".
+2.Record type: Select "A".
+3.Resolves to: Paste the DNS name of your Lightsail load balancer.
+4. Click "Save".
+<img width="623" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/2b2f2092-611f-43fe-bf62-57ae8f8d98bb">
+
+## Update route53 nameservers to use Lightsail's nameservers:
+1.Log in to your Route53 Domain 
+2.Find the DNS or Nameserver settings for your domain.
+3.Replace the current nameservers with the ones provided by Lightsail. You can find these in the "DNS zone" management page under "Nameserver
+<img width="516" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/1142570f-5240-4bcd-96e6-d3461f5bf640">
+s".
+4.Save the changes
+<img width="549" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/b78c813f-5be7-467f-bbe0-fb143f9ba5e3">
+
+## Test and Verify
+Access Your Website:
+1.Visit your domain name in a web browser.
+You should see your WordPress site loading through the Load Balancer.
+2.Verify Load Balancing:
+https://mytestdevops.com/
+
+<img width="851" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/c5fb7df7-53eb-4d83-931d-dd4825b048a5">
+3.
+https://info.mytestdevops.com/
+<img width="901" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/911bdaaa-f813-49be-ba1c-ddbd05599996">
+4 
+https://blog.mytestdevops.com/
+<img width="848" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/ea6ed31c-5c51-430e-8bc4-abdb0cfc0324">
