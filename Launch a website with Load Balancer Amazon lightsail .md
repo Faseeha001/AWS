@@ -2,6 +2,9 @@
 
 Setting up two web servers, connecting them to a load balancer on Amazon Lightsail, and pointing them to a domain involves several steps. Here's a detailed guide to help you through the process:
 
+<img width="526" alt="image" src="https://github.com/Faseeha001/Static-web-Host-using-S3/assets/169563689/14c1eef4-3e4c-4642-b15b-9b35b25baf49">
+
+
 ## 1. Set Up Two Web Servers on Amazon Lightsail
 **Step 1**: Create Two Lightsail Instances
 
