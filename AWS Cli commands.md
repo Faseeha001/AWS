@@ -14,7 +14,8 @@ To use the AWS CLI, open your terminal and type `aws` followed by the desired co
 
 ### Basic Commands
 1. **aws configure**: Configures AWS credentials.
-    <img width="532" alt="image" src="https://github.com/Faseeha001/Terraform/assets/169563689/86b4bb92-814e-4499-a775-bad299ab200a">
+   
+<img width="532" alt="image" src="https://github.com/Faseeha001/Terraform/assets/169563689/86b4bb92-814e-4499-a775-bad299ab200a">
   
 2. **aws version**`: Displays the AWS CLI version.
 
