@@ -13,15 +13,16 @@ Before using the AWS CLI, ensure you have the following:
 To use the AWS CLI, open your terminal and type `aws` followed by the desired command and its options. Here are some common commands:
 
 ### Basic Commands
-- `aws help`: Displays help information.
-- `aws configure`: Configures AWS credentials.
-- 
-- `aws version`: Displays the AWS CLI version.
+1. **aws configure**: Configures AWS credentials.
+  <img width="532" alt="image" src="https://github.com/Faseeha001/Terraform/assets/169563689/86b4bb92-814e-4499-a775-bad299ab200a">
+  
+2. **`aws version**`: Displays the AWS CLI version.
+   <img width="531" alt="image" src="https://github.com/Faseeha001/AWS/assets/169563689/81e9ce7a-246e-4808-ac6c-eaedb602e05a">
 
 ### S3 Commands
-- `aws s3 ls`: Lists buckets or objects in a bucket.
-- `aws s3 cp <localPath> <s3Path>`: Copies a file or directory to/from Amazon S3.
-- `aws s3 sync <localPath> <s3Path>`: Syncs files and directories to/from Amazon S3.
+1.`**aws s3 ls**`: Lists buckets or objects in a bucket.
+2.`aws s3 cp <localPath> <s3Path>`: Copies a file or directory to/from Amazon S3.
+3. `aws s3 sync <localPath> <s3Path>`: Syncs files and directories to/from Amazon S3.
 
 ### EC2 Commands
 - `aws ec2 describe-instances`: Describes EC2 instances.
